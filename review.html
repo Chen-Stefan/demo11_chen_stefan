@@ -47,7 +47,74 @@
     <nav id="navbarPlaceholder"></nav>
 
     <!-- the body of your page goes here -->
-    
+    <h1>Review for <span id="HikeName"></span> </h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Add a title</label>
+            <input type="text" class="form-control" id="title" placeholder="Title">
+        </div><br>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">What was the level of the hike?</label>
+            <select class="form-control" id="level">
+                <option>Hard</option>
+                <option>Moderate</option>
+                <option>Easy</option>
+            </select>
+            <br>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Which season did you do the hike?</label>
+                <select class="form-control" id="season">
+                    <option>Fall</option>
+                    <option>Winter</option>
+                    <option>Spring</option>
+                    <option>Summer</option>
+                </select>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">What did you think of the trail?</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <br>
+            <!--Flooded-->
+            <label>Flooded <span style="display:inline-block; width: 26pt;"></span></label>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flooded" value="Yes">
+                <label>Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flooded" value="No">
+                <label>No</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flooded" value="unSure" checked="">
+                <label>Not sure</label>
+            </div>
+            <br>
+            <!--Scramble-->
+            <label>Scramble <span style="display:inline-block; width: 20pt;"></span></label>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="scrambled" value="Yes">
+                <label>Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="scrambled" value="No">
+                <label>No</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="scrambled" value="unSure" checked="">
+                <label>Not sure</label>
+            </div>
+
+            <br>
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-lg btn-primary pull-right"
+                    onclick="writeReview()">Submit</button>
+            </div>
+         </div>
+    </form>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
